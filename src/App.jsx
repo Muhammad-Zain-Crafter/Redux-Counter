@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { store } from './Redux/Store'
 import { Provider, useDispatch, useSelector } from 'react-redux'
 import { decrement, increment, reset, incrementByAmount} from './Features/Counter/CounterSlice'
 
