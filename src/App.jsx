@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import { Provider, useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment, reset, incrementByAmount} from './Features/Counter/CounterSlice'
-
-
 
 function App() {
   const [amount, setAmount] = useState(0);
@@ -29,9 +27,8 @@ function App() {
         <button onClick={handleIncrement} className='btn'>+</button>
         <p className='count-display'>Count: {count}</p>
         <button onClick={handleDecrement} className='btn'>-</button>
-        <button onClick={handleResset} className='btn reset'>Reset</button>
+        <button onClick={handleReset} className='btn reset'>Reset</button>
      </div>
-
       <div className='input-section'>
         <input
           type='number'
@@ -43,8 +40,6 @@ function App() {
           Increment by amount
         </button>
       </div>
-    
-   
    </div>
   )
 }
